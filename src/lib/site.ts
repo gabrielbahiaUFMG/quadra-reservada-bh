@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Bola & Cia",
-  phone: "(31) 3421-0029",
-  phoneDigits: "3134210029",
-  whatsapp: "5531342100290", // country + area + number (fallback)
-  whatsappLink: "https://wa.me/553134210029",
+  phone: "(31) 98399-2520",
+  phoneDigits: "31983992520",
+  whatsapp: "5531983992520", // country + area + number (fallback)
+  whatsappLink: "https://wa.me/5531983992520",
   address: {
     street: "Praça Irajá, 20",
     district: "Concórdia",
