@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       reservas: {
         Row: {
+          bloqueado: boolean
           created_at: string
           data: string
           horario: string
@@ -25,6 +26,7 @@ export type Database = {
           telefone: string
         }
         Insert: {
+          bloqueado?: boolean
           created_at?: string
           data: string
           horario: string
@@ -34,6 +36,7 @@ export type Database = {
           telefone: string
         }
         Update: {
+          bloqueado?: boolean
           created_at?: string
           data?: string
           horario?: string
@@ -46,7 +49,14 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      horarios_ocupados: {
+        Row: {
+          quadra: string
+          data: string
+          horario: string
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never

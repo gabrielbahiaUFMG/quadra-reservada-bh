@@ -44,7 +44,7 @@ export function Reserva() {
     async function load() {
       setLoadingSlots(true);
       const { data: rows, error } = await supabase
-        .from("reservas")
+        .from("horarios_ocupados")
         .select("horario")
         .eq("quadra", quadra)
         .eq("data", data);
